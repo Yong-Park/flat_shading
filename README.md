@@ -1,10 +1,3 @@
 # flat_shading
 
-r = Render() /n
-scale_factor = (6,6,16)
-translate_factor = (512,512,0)
-r.glCreateWindow(1024,1024)
-
-r.lightPosition(2,-3,-1)
-r.render_obj('./modelos/frost.obj',scale_factor,translate_factor)
-r.glFinish()
+Correr Render, luego definir la escala x,y,z en scale_factor, la posicion de donde se comenzara en translate_factor (x,y,z), crear el window con glCreateWindow(tamaño, tamaño), lightPosition(x,y,z) que sera de donde salga la luz, render_obj("nombre del archivo",scale_factor,translate_factor), finalmente glFinish
